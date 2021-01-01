@@ -10,7 +10,10 @@
 //use the built-in array method .map
   
   //Code here
-
+const dragonMapper = (arr) => {
+  const mapped = arr.map(e => e + '...here be dragons')
+  return mapped
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -21,7 +24,10 @@
 //cookieLoversOnly should return the filtered array.
   
   //Code here
-
+  const cookieLoversOnly = (arr) => {
+    return arr.filter(e => e.favoriteCookie)
+  }
+  
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,7 +41,7 @@
 
 
   //Code here
-
+// const changeValue (arr,cb)
 
 
 //////////////////PROBLEM 4////////////////////
