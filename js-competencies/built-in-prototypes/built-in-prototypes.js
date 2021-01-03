@@ -41,7 +41,9 @@ const dragonMapper = (arr) => {
 
 
   //Code here
-// const changeValue (arr,cb)
+const changeValue = (arr,cb) => {
+  arr.forEach(cb)
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -53,7 +55,9 @@ const dragonMapper = (arr) => {
 //Return the product.
   
   //Code here
-
+const findProduct = (arr) => {
+   return arr.reduce((arr, curr) => acc * curr)
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -70,7 +74,7 @@ const dragonMapper = (arr) => {
 // cipherize will return: "d"
 
   //Code here
-
+const cipherize = (arr, str) => str.charAt(arr.indexOf(str))
 
 
 //////////////////PROBLEM 6////////////////////
@@ -81,3 +85,4 @@ const dragonMapper = (arr) => {
 //apart, reversing it, and putting it back together again.
 
   //Code here
+let reverseMe = (str) => str.split('').reverse().join('')

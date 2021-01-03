@@ -10,7 +10,13 @@
 //should return the SECOND callback param invoked.
 
   //Code here
-
+const invokesCallbacks = (num, cb, cbdos) => {
+  if(num > 10){
+    return cb()
+  }else{
+    return cbdos()
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -25,7 +31,9 @@
   function timedGreeting(callback){
 
     //Code here
-
+    setTimeout(()=>{
+      greeting = callback()
+    }, 1000)
     
   }
 
