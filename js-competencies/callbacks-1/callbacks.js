@@ -4,7 +4,8 @@
 
 //Code here
 const stringItOut = (arr) => {
-   return sorted = arr.sort().reverse().toString()
+   let strung = arr.sort((a,b) => b.length - a.length ).reverse().toString()
+  return strung
 }
 
 //////////////////PROBLEM 2////////////////////
