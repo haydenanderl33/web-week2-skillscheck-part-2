@@ -56,7 +56,7 @@ const changeValue = (arr,cb) => {
   
   //Code here
 const findProduct = (arr) => {
-   return arr.reduce((arr, curr) => acc * curr)
+   return arr.reduce((acc, curr) => acc * curr)
 }
 
 //////////////////PROBLEM 5////////////////////
