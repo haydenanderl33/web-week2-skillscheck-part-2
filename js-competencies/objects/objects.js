@@ -18,7 +18,7 @@ var accessByDotNotation = duck.name
 // var accessByBracketNotation = duck{"bites"}
 // var accessByBracketNotation = Object[duck][bites]
 // var accessByBracketNotation = duck[bites]
-// var accessByBracketNotation = duck["bites"]
+var accessByBracketNotation = duck["bites"]
 // var accessByBracketNotation = duck(bites)
 
 
@@ -35,7 +35,11 @@ var person = {
 }
 
 //CODE HERE
-
+var person = {
+  moveCities: function(city){
+    person.city = city
+  }
+}
 
 ///////////////////Problem 3///////////////////
 
@@ -67,7 +71,7 @@ var sampleOutput = [
 ]
 
 //CODE HERE
-
+const keyAccessor = (arr,obj) => arr.map(e => obj[e])
 
 
 ///////////////////Problem 4///////////////////
@@ -78,7 +82,13 @@ var sampleOutput = [
 //getVals should return the new array.
 
 //CODE HERE
-
+const getVals = obj => {
+  let arr = [];
+  for(var prop in obj){
+    arr.push(obj[prop])
+  }
+  return arr
+}
 
 ///////////////////Problem 5///////////////////
 
@@ -93,3 +103,4 @@ var doors = {
 }
 
 //Code here
+let doorKeys = (Object.keys(doors))
