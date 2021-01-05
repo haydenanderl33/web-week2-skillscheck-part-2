@@ -23,7 +23,7 @@ sunsetColors[0] = "blue"
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"];
 
 //Code here
-function sunrise(){
+const sunrise = ()=>{
   newArr = [...sunriseColors]
   newArr[0] = "green"
   return newArr
