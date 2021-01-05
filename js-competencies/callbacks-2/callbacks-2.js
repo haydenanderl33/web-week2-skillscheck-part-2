@@ -10,7 +10,7 @@
 //should return the SECOND callback param invoked.
 
   //Code here
-const invokesCallbacks = (num, cb, cbdos) => {
+function invokesCallbacks(num, cb, cbdos){
   if(num > 10){
     return cb()
   }else{
